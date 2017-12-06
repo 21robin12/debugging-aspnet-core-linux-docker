@@ -1,0 +1,18 @@
+version: '3' 
+services:
+  corelinux:
+    build:
+      context: .\DockerDebug
+      dockerfile: Dockerfile
+    image: corelinux:dev
+    ports: #exposes ports to the host machine e.g. developer's computer
+      - "9000:80"
+      - "9022:22"
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.2
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

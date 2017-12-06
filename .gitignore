@@ -1,0 +1,15 @@
+[Dd]ebug/
+[Rr]elease/
+build/
+packages/
+!packages/**/[Bb]uild
+[Bb]in/
+[Oo]bj/
+.vs/
+*.tmp
+*.orig
+*[Rr]e[Ss]harper.user
+_ReSharper.*/
+*.suo
+*.sln.cache
+*.user
