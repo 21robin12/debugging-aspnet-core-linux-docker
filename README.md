@@ -23,9 +23,10 @@
  
 ### 2 - Starting dotnet & attaching the debugger
  
+ - Open Visual Studio 2017 in administrator mode and build the DockerDebug solution
  - `docker-compose up --force-recreate --build`
  - Visit http://172.20.128.2/api/test/get to check that the site is running
- - Open Visual Studio 2017, Attach to Process (`ctrl+alt+p`) 
+ - Attach to Process (`ctrl+alt+p`) 
  - Connection Type: SSH, Connection Target: 172.20.128.2 -> press enter
  - Host name: 172.20.128.2, Port: 22, User name: root, Authentication type: Private Key, Private key file: browse to `openssh_privatekey`
  - Click Connect
