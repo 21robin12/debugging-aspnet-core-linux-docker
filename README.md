@@ -18,6 +18,7 @@
  - Open PuTTYgen.exe
  - Select `SSH-2 RSA` and 2048 bits
  - Click Generate and follow instructions to generate a key
+ - Clone this repository
  - Copy the public key (entire contents of the textarea) into `DockerDebug/authorized_keys`
  - Conversions -> Export OpenSSH key -> (no passphrase) -> overwrite `DockerDebug/openssh_privatekey`
  
